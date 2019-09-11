@@ -1,0 +1,9 @@
+
+.home{
+  top: 0px;
+  left: -3px;
+  width: 1920px;
+  height: 1077px;
+  position: relative;
+  background: url('src/assets/home.png')
+}
