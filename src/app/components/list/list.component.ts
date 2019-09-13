@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
-  photos: Array = ['src/assets/big.png', 'src/assets/home.png','src/assets/little.png'];
+  photos = ['src/assets/big.png', 'src/assets/home.png','src/assets/little.png'];
 
   constructor() { }
 

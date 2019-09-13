@@ -10,6 +10,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ListComponent } from './components/list/list.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,7 @@ import { ListComponent } from './components/list/list.component';
     ExampleProjComponent,
     HeaderComponent,
     FooterComponent,
-    ListComponent
+    ListComponent, 
   ],
   imports: [
     BrowserModule,
