@@ -1,11 +1,24 @@
-<div class="NavBar">
+<div class="NavBar" *ngIf="!isMobile">
   <div class="NavBar__Logo">
-    <a routerLink="" routerLinkActive="active">Pro-duc-tion</a>
+    <a routerLink="" routerLinkActive="active">TALL ORDER</a>
   </div>
 
     <div class="NavBar__Links">
       <a routerLink="/about" routerLinkActive="active" class="NavBar__Links--Anchor">About</a>
       <a routerLink="/example-proj" routerLinkActive="active" class="NavBar__Links--Anchor">example-projects</a>
+    </div>
+</div>
+<div class="NavBar" *ngIf="isMobile">
+  <div class="NavBar__Logo">
+    <a routerLink="" routerLinkActive="active">TALL ORDER</a>
+  </div>
+
+  <!-- <i class="material-icons md-light"> menu </i> -->
+
+  <div class="NavBar__Links">
+      <i class="material-icons menu-icon">menu</i>
+      <!-- <a routerLink="/about" routerLinkActive="active" class="NavBar__Links--Anchor">About</a>
+      <a routerLink="/example-proj" routerLinkActive="active" class="NavBar__Links--Anchor">example-projects</a> -->
     </div>
 </div>
 
