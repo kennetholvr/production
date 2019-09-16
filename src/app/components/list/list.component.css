@@ -1,0 +1,11 @@
+.sampleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    overflow: clip;
+}
+.sampleImage {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}
