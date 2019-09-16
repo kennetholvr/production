@@ -1,9 +1,21 @@
 
 .home{
   top: 0px;
-  left: -3px;
-  width: 1920px;
-  height: 1077px;
-  position: relative;
-  background: url('src/assets/home.png')
+}
+#primaryCard{
+  background: url('../../assets/home.png');
+  background-size: cover;
+}
+#secondCard{
+  background-color: blue;
+}
+#thirdCard{
+  background-color: blueviolet;
+}
+#fourthCard{
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/5/53/Pickle_Rick.jpg');
+  background-size: cover;
+}
+#fifthCard{
+  background-color: yellowgreen;
 }
