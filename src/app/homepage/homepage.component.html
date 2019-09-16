@@ -1,18 +1,14 @@
 <div class="home">
-    <mat-grid-list cols="2" rowHeight="100px">
-        <mat-grid-tile
-            *ngFor="let tile of tile"
-            class="newb"
-            colspan=2
-            rowspan=5
-        >
-            {{tile.text}}
-        </mat-grid-tile>
+    <mat-grid-list
+        cols="2"
+        gutterSize=20
+        rowHeight="10rem"
+    >
         <mat-grid-tile
             *ngFor="let tile of tiles"
             [colspan]="tile.cols"
             [rowspan]="tile.rows"
-            [style.background]="tile.color"
+            id="{{tile.id}}"
         >
           {{tile.text}}
         </mat-grid-tile>
