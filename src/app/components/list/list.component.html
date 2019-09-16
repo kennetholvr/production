@@ -1,15 +1,37 @@
-<mat-grid-list
-  cols="4"
-  gutterSize=20
-  rowHeight="10rem"
->
-  <mat-grid-tile
-      *ngFor="let tile of tiles"
-      [colspan]="tile.cols"
-      [rowspan]="tile.rows"
-      class="sampleContainer"
-      id="{{tile.id}}"
+<div *ngIf="!isMobile">
+  <mat-grid-list
+    cols="4"
+    gutterSize=20
+    rowHeight="10rem"
   >
-    <img class="sampleImage" src={{tile.image}} />
-  </mat-grid-tile>
-</mat-grid-list>
+    <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        class="sampleContainer"
+        id="{{tile.id}}"
+    >
+      <img class="sampleImage" src={{tile.image}} />
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+<div *ngIf="isMobile">
+    <mat-grid-list 
+      cols="1"
+      gutterSize=0
+      rowHeight="10rem"
+      >
+      <mat-grid-tile 
+      [rowspan]="tile.rows"
+      *ngFor="let tile of mobileTiles"
+      [colspan]="tile.cols"
+      
+      class="sampleContainer"
+      >
+        <div class="mobile-pic" id="{{tile.id}}">
+          <img class="sampleImage" src={{tile.image}} />
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+</div>
