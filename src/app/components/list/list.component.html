@@ -1,4 +1,15 @@
-<p>list works!</p>
-<tr *ngFor="let photo of photos">
-  <li>{{photo}}</li>
-</tr>
+<mat-grid-list
+  cols="4"
+  gutterSize=20
+  rowHeight="10rem"
+>
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      class="sampleContainer"
+      id="{{tile.id}}"
+  >
+    <img class="sampleImage" src={{tile.image}} />
+  </mat-grid-tile>
+</mat-grid-list>
