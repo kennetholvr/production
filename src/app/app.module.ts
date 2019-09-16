@@ -8,8 +8,16 @@ import { AboutComponent } from './about/about.component';
 import { ExampleProjComponent } from './example-proj/example-proj.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { ListComponent } from './components/list/list.component';
+import { MatIconModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
 
 @NgModule({
   declarations: [
@@ -18,13 +26,17 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     AboutComponent,
     ExampleProjComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ListComponent, 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatGridListModule,
     MatToolbarModule,
+    HttpClientModule,
+    MatIconModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
