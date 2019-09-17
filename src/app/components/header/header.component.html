@@ -1,10 +1,8 @@
 <mat-toolbar class="NavBar" *ngIf="!isMobile">
-  <div class="logo">
-    <a class="logo-text" routerLink="" routerLinkActive="active">
-      <img class="logo-image" src="../../../assets/interstitial.gif" />
-      TALL ORDER
-    </a>
-  </div>
+  <a class="logo-link" routerLink="" routerLinkActive="active">
+    <img class="logo-image" src="../../../assets/interstitial.gif" />
+    <h3 class="logo-text">TALL ORDER</h3>
+  </a>
   <span class="empty-space"></span>
   <div class="links">
     <a routerLink="/about" routerLinkActive="active" class="links__anchor">About</a>

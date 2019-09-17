@@ -1,7 +1,11 @@
+.page{
+    background-color: black;
+}
 .sampleContainer {
     display: flex;
     justify-content: center;
     align-items: stretch;
+    background-color: black;
     overflow: clip;
 }
 .sampleImage {
