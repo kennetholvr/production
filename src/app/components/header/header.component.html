@@ -1,13 +1,14 @@
-<div class="NavBar" *ngIf="!isMobile">
-  <div class="NavBar__Logo">
-    <a routerLink="" routerLinkActive="active">TALL ORDER</a>
+<mat-toolbar class="NavBar" *ngIf="!isMobile">
+  <a class="logo-link" routerLink="" routerLinkActive="active">
+    <img class="logo-image" src="../../../assets/interstitial.gif" />
+    <h3 class="logo-text">TALL ORDER</h3>
+  </a>
+  <span class="empty-space"></span>
+  <div class="links">
+    <a routerLink="/about" routerLinkActive="active" class="links__anchor">About</a>
+    <a routerLink="/example-proj" routerLinkActive="active" class="links__anchor">example-projects</a>
   </div>
-
-    <div class="NavBar__Links">
-      <a routerLink="/about" routerLinkActive="active" class="NavBar__Links--Anchor">About</a>
-      <a routerLink="/example-proj" routerLinkActive="active" class="NavBar__Links--Anchor">example-projects</a>
-    </div>
-</div>
+</mat-toolbar>
 <div class="NavBar" *ngIf="isMobile">
   <div class="NavBar__Logo">
     <a routerLink="" routerLinkActive="active">TALL ORDER</a>
@@ -16,9 +17,8 @@
   <!-- <i class="material-icons md-light"> menu </i> -->
 
   <div class="NavBar__Links">
-      <i class="material-icons menu-icon">menu</i>
-      <!-- <a routerLink="/about" routerLinkActive="active" class="NavBar__Links--Anchor">About</a>
-      <a routerLink="/example-proj" routerLinkActive="active" class="NavBar__Links--Anchor">example-projects</a> -->
-    </div>
+    <i class="material-icons menu-icon">menu</i>
+    <!-- <a routerLink="/about" routerLinkActive="active" class="NavBar__Links--Anchor">About</a>
+    <a routerLink="/example-proj" routerLinkActive="active" class="NavBar__Links--Anchor">example-projects</a> -->
+  </div>
 </div>
-

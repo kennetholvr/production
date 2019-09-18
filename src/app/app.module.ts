@@ -14,8 +14,8 @@ import { ListComponent } from './components/list/list.component';
 import { MatIconModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
+import { CardComponent } from './components/card/card.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -26,6 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     FooterComponent,
     ListComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +34,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatGridListModule,
     MatToolbarModule,
     HttpClientModule,
+    MatCardModule,
     MatIconModule,
     BrowserAnimationsModule
   ],
