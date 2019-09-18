@@ -21,8 +21,10 @@ const mobileTiles: ITile[] = [
   {title: 'Five', cols: 1, rows: 3, id: 5, image: 'https://picsum.photos/200/300/?random'},
 ];
 const heading: string = 'Featured Projects'
+const copyright: string = '© 2019 - Tall Order Films'
 
 export {
+  copyright,
   heading,
   ITile,
   tiles,

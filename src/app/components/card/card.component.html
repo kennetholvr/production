@@ -1,8 +1,9 @@
-<mat-card class="card">
+<mat-card class="primary-card" *ngIf="isPrimary">
     <img class="image" src={{image}}/>
-    <h1 class="secondary-title" *ngIf="!isPrimary">{{title}}</h1>
-    <div *ngIf="isPrimary">
-        <h3 class="heading">{{heading}}</h3>
-        <h1 class="primary-title">{{title}}</h1>
-    </div>
+    <h3 class="heading">{{heading}}</h3>
+    <h1 class="primary-title">{{title}}</h1>
+</mat-card>
+<mat-card class="secondary-card" *ngIf="!isPrimary">
+    <img class="image" src={{image}}/>
+    <h1 class="secondary-title">{{title}}</h1>
 </mat-card>
