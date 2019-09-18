@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CardService } from 'src/services';
+import { ResponsiveService } from 'src/services/responsive.service';
+import { ITile, mobileTiles, tiles } from 'src/app/client-spec';
 
 @Component({
   selector: 'app-list',
@@ -7,9 +9,20 @@ import { CardService } from 'src/services';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-
-  constructor(public card: CardService) {}
+  public isMobile: Boolean;
+  public tiles: ITile[] = tiles;
+  public mobileTiles: ITile[] = mobileTiles;
+  constructor(
+    private card: CardService,
+    private responsiveService: ResponsiveService,
+  ) { }
   ngOnInit() {
+    this.onResize();
+    this.responsiveService.checkWidth();
   }
-  tiles = this.card.tiles;
+  onResize() {
+    this.responsiveService.getMobileStatus().subscribe(isMobile => {
+      this.isMobile = isMobile;
+    });
+  }
 }

@@ -1,5 +1,5 @@
 <mat-grid-list
-  class="page"
+  *ngIf="!isMobile"
   cols="4"
   gutterSize=20
   rowHeight="10rem"
@@ -10,6 +10,26 @@
       [rowspan]="tile.rows"
       class="sampleContainer"
       id="{{tile.id}}"
+  >
+    <app-card class="sampleImage"
+      [image]="tile.image"
+      [id]="tile.id"
+      [title]="tile.title"
+    ></app-card>
+  </mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list
+  *ngIf="isMobile"
+  cols="1"
+  gutterSize=0
+  rowHeight="10rem"
+>
+  <mat-grid-tile
+    *ngFor="let tile of mobileTiles"
+    [rowspan]="tile.rows"
+    [colspan]="tile.cols"
+    class="sampleContainer"
+    id="{{tile.id}}"
   >
     <app-card class="sampleImage"
       [image]="tile.image"
