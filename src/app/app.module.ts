@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardComponent } from './components/card/card.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import {MatCardModule} from '@angular/material/card';
     MatToolbarModule,
     HttpClientModule,
     MatCardModule,
+    MatExpansionModule,
     MatIconModule,
     BrowserAnimationsModule
   ],
