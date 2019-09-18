@@ -1,20 +1,22 @@
 interface ITile {
   cols: number;
   rows: number;
-  text?: string;
+  title?: string;
   color?: string;
-  id?: string;
+  id?: number;
   image?: string;
 }
 const tiles: ITile[] = [
-  {text: 'One', cols: 4, rows: 5, id: 'primaryCard', image: '../../../assets/home.png'},
-  {text: 'Two', cols: 2, rows: 3, id: 'secondCard', image: '../../../assets/big.png'},
-  {text: 'Three', cols: 2, rows: 3, id: 'thirdCard', image: '../../assets/little.png' },
-  {text: 'Four', cols: 2, rows: 3, id: 'fourthCard', image: 'https://upload.wikimedia.org/wikipedia/en/5/53/Pickle_Rick.jpg'},
-  {text: 'Five', cols: 2, rows: 3, id: 'fifthCard', image: 'https://picsum.photos/200/300/?random'},
+  {title: 'One', cols: 4, rows: 5, id: 1, image: '../../../assets/home.png'},
+  {title: 'Two', cols: 2, rows: 3, id: 2, image: '../../../assets/big.png'},
+  {title: 'Three', cols: 2, rows: 3, id: 3, image: '../../assets/little.png' },
+  {title: 'Four', cols: 2, rows: 3, id: 4, image: 'https://upload.wikimedia.org/wikipedia/en/5/53/Pickle_Rick.jpg'},
+  {title: 'Five', cols: 2, rows: 3, id: 5, image: 'https://picsum.photos/200/300/?random'},
 ];
+const heading: string = 'Featured Projects'
 
 export {
+  heading,
   ITile,
   tiles,
 }

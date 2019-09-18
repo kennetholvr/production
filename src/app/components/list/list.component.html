@@ -11,6 +11,10 @@
       class="sampleContainer"
       id="{{tile.id}}"
   >
-    <app-card class="sampleImage" [image]="tile.image"></app-card>
+    <app-card class="sampleImage"
+      [image]="tile.image"
+      [id]="tile.id"
+      [title]="tile.title"
+    ></app-card>
   </mat-grid-tile>
 </mat-grid-list>
