@@ -1,10 +1,20 @@
-.card{
+.primary-card{
     color: white;
     display: flex;
     justify-content: center;
     align-items: stretch;
     overflow: clip;
     padding: 0;
+    height: inherit;
+    margin-bottom: 5rem;
+}
+.secondary-card{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    overflow: clip;
+    padding: 3rem;
     height: inherit;
 }
 .primary-title{
@@ -18,7 +28,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 4rem;
     position: absolute;
-    top: 15rem;
+    top: 12rem;
     vertical-align: middle;
     z-index: 0.9;
 }
