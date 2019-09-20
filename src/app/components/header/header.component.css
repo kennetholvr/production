@@ -50,6 +50,7 @@
 .mobile-menu{
   background-color: black;
   opacity: 0.75;
+  position:relative;
 }
 .logo-link-mobile{
   text-decoration-line: none;
