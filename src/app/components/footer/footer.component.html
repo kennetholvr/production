@@ -1,4 +1,4 @@
-<mat-toolbar class="footer">
+<mat-toolbar class="footer" *ngIf="!isMobile">
   <div class="copyright">{{copyright}}</div>
   <span class="empty-space"></span>
   <div class="links">
@@ -9,3 +9,29 @@
     <a class="link" id="links-vimeo">Vimeo</a>
   </div>
 </mat-toolbar>
+<mat-accordion *ngIf="isMobile" class="accordion" hideToggle>
+  <mat-expansion-panel class="mobile-menu">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <div class="copyright">{{copyright}}</div>
+        <span class="empty-space"></span>
+        <img class="sm-links" src="https://img.icons8.com/material-outlined/24/000000/hashtag-large.png">
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="links">
+      <a class="link" id="links-email">
+        <mat-icon>email</mat-icon>
+      </a>
+      <a class="link" id="links-instagram">
+        <img src="https://img.icons8.com/ios-filled/24/000000/instagram.png">
+      </a>
+      <a class="link" id="links-twitter">
+        <img src="https://img.icons8.com/ios-filled/24/000000/twitter.png">
+      </a>
+      <a class="link" id="links-facebook">
+        <img src="https://img.icons8.com/material/24/000000/facebook-f.png">
+      </a>
+      <a class="link" id="links-vimeo">Vimeo</a>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
