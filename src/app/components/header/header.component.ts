@@ -58,13 +58,13 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   }
 
   constructor(private responsiveService:ResponsiveService,
-    iconRegistry: MatIconRegistry, 
+    iconRegistry: MatIconRegistry,
     sanitizer: DomSanitizer){
       iconRegistry.addSvgIcon(
         'thumbs-up',
         sanitizer.bypassSecurityTrustResourceUrl('assets/img/examples/thumbup-icon.svg'));
       }
-      
+
   ngAfterViewInit() {
     const scroll$ = fromEvent(window, 'scroll').pipe(
       throttleTime(10),

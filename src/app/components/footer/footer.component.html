@@ -9,7 +9,56 @@
     <a class="link" id="links-vimeo">Vimeo</a>
   </div>
 </mat-toolbar>
-<mat-accordion *ngIf="isMobile" class="accordion" hideToggle>
+<mat-toolbar class="footer" *ngIf="isMobile">
+  <mat-grid-list
+    cols="5"
+    rowHeight="2rem"
+  >
+    <mat-grid-tile
+      [colspan]="5"
+      [rowspan]="1"
+      class="copyright"
+    >
+      {{copyright}}
+    </mat-grid-tile>
+    <mat-grid-tile
+      [colspan]="1"
+      [rowspan]="1"
+      class="link-container"
+    >
+      <a class="link" id="links-email">Email</a>
+    </mat-grid-tile>
+    <mat-grid-tile
+      [colspan]="1"
+      [rowspan]="1"
+      class="link-container"
+    >
+      <a class="link" id="links-instagram">Instagram</a>
+    </mat-grid-tile>
+    <mat-grid-tile
+      [colspan]="1"
+      [rowspan]="1"
+      class="link-container"
+    >
+      <a class="link" id="links-twitter">Twitter</a>
+    </mat-grid-tile>
+    <mat-grid-tile
+      [colspan]="1"
+      [rowspan]="1"
+      class="link-container"
+    >
+      <a class="link" id="links-facebook">Facebook</a>
+    </mat-grid-tile>
+    <mat-grid-tile
+      [colspan]="1"
+      [rowspan]="1"
+      class="link-container"
+    >
+      <a class="link" id="links-vimeo">Vimeo</a>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-toolbar>
+<!-- <mat-accordion *ngIf="isMobile" class="accordion" hideToggle>
   <mat-expansion-panel class="mobile-menu">
     <mat-expansion-panel-header>
       <mat-panel-title>
@@ -34,4 +83,4 @@
       <a class="link" id="links-vimeo">Vimeo</a>
     </div>
   </mat-expansion-panel>
-</mat-accordion>
+</mat-accordion> -->
